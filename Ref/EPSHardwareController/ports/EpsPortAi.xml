@@ -1,0 +1,20 @@
+<interface name = "EPS" namespace="Ref">
+  <comment>
+    Port to control EPS
+  </comment>
+  <args>
+    <arg name="power1" type="F32">
+       </arg>
+    <arg name="power2" type = "F32">
+    </arg>
+    <arg name="calculator" type = "ENUM">
+      <enum name = "PowerCalculator">
+	<item name = "MATH_ADD"/>
+	<item name = "MATH_SUB"/>
+	<item name = "MATH_MULTIPLY"/>
+	<item name = "MATH_DIVIDE"/>
+      </enum>
+      <comment>operation argument</comment>
+    </arg>
+  </args>
+</interface>

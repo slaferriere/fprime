@@ -23,7 +23,7 @@ FW_GTEST_MODULES := \
 	Fw/SerializableFile/test/TestSerializable \
 	Fw/FilePacket/GTest \
 	Fw/Types/GTest
-	
+
 OS_MODULES := \
 	Os 
 
@@ -89,6 +89,10 @@ REF_MODULES := \
 	Ref/SignalGen \
 	Ref/PingReceiver \
 	Ref/Example/ports \
+  EPSHardwareController2 \
+	Ref/EPSHardwareController/ports \
+	Ref/EPSHardwareController/serializables \
+	Ref/EPSHardwareController/components \
 	Ref/EPSPower/EPSPowerPort \
 	Ref/EPSPower/EPSPowerReceiver \
 	Ref/EPSPower/EPSPowerSender \
