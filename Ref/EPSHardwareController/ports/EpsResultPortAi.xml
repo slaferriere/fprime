@@ -1,0 +1,10 @@
+<interface name="EpsResult" namespace="Ref">
+  <comment>
+    Port to return the power of each operable hardware
+  </comment>
+  <args>
+    <arg name = "result" type="F32">
+      <comment>the result of the operation></comment>
+    </arg>
+  </args>
+</interface>
