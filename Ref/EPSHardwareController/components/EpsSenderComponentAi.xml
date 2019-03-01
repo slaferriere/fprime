@@ -15,7 +15,7 @@
     </port>
   </ports>
   <commands>
-    <command kind="async" opcode="0" mnemonic="MS_FIND_POWER">
+    <command kind="async" opcode="0" mnemonic="EPS_FIND_POWER">
       <comment>
 	Get power
       </comment>
@@ -36,12 +36,12 @@
     </command>
   </commands>
   <telemetry>
-    <channel id="0" name="PS_VAL1" data_type="F32">
+    <channel id="0" name="EPS_VAL1" data_type="F32">
       <comment>
 	The first value
       </comment>
     </channel>
-    <channel id="1" name="PS_VAL2" data_type="F32">
+    <channel id="1" name="EPS_VAL2" data_type="F32">
       <comment>
 	The second value
       </comment>

@@ -74,7 +74,7 @@ namespace Ref {
   // ----------------------------------------------------------------------
 
   void EpsSenderComponentImpl ::
-    MS_FIND_POWER_cmdHandler(
+    PS_FIND_POWER_cmdHandler(
         const FwOpcodeType opCode,
         const U32 cmdSeq,
         F32 val1,
@@ -111,13 +111,13 @@ namespace Ref {
           break;
     }
 
-    this->tlmWrite_MS_OP(opTlm);
-    this->tlmWrite_MS_VAL1(val1);
-    this->tlmWrite_MS_VAL2(val2);
-    this->log_ACTIVITY_LO_MS_COMMAND_RECV(val1,val2,opEv);
-    this->powerOut_out(0,val1,val2,opPort);
+    this->tlmWrite_EPS_OP(opTlm);
+    this->tlmWrite_EPS_VAL1(val1);
+    this->tlmWrite_EPS_VAL2(val2);
+    this->log_ACTIVITY_LO_EPS_COMMAND_RECV(val1,val2,EpsEv);
+    this->powerOut_out(0,val1,val2,EpsPort);
     // reply with completion status
-    this->cmdResponse_out(opCode,cmdSeq,Fw::COMMAND_OK);
+    this->cmdResponse_out(EpsCode,cmdSeq,Fw::COMMAND_OK);
   }
 
 } // end namespace Ref

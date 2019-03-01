@@ -6,7 +6,7 @@
 
 |Mnemonic|ID|Description|Arg Name|Arg Type|Comment
 |---|---|---|---|---|---|
-|MS_FIND_POWER|0 (0x0)|Get power| | |   
+|PS_FIND_POWER|0 (0x0)|Get power| | |   
 | | | |val1|F32|The first value|                    
 | | | |val2|F32|The second value|                    
 | | | |operation|EpsOp|The operation to perform|                    

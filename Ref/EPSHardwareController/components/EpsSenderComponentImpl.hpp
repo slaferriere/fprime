@@ -76,7 +76,7 @@ namespace Ref {
 
       //! Implementation for MS_FIND_POWER command handler
       //! Get power
-      void MS_FIND_POWER_cmdHandler(
+      void EPS_FIND_POWER_cmdHandler(
           const FwOpcodeType opCode, /*!< The opcode*/
           const U32 cmdSeq, /*!< The command sequence number*/
           F32 val1, /*!< The first value*/

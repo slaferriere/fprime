@@ -22,7 +22,7 @@
         </port>
     </ports>
     <commands>
-        <command kind="async" opcode="0" mnemonic="MR_SET_FACTOR1">
+        <command kind="async" opcode="0" mnemonic="PR_SET_FACTOR1">
             <comment>
             Set operation
             </comment>
@@ -32,35 +32,35 @@
                 </arg>          
              </args>
         </command>
-        <command kind="async" opcode="1" mnemonic="MR_CLEAR_EVENT_THROTTLE">
+        <command kind="async" opcode="1" mnemonic="PR_CLEAR_EVENT_THROTTLE">
             <comment>Clear the event throttle
             </comment>
         </command>
     </commands>
     <telemetry>
-        <channel id="0" name="MR_OPERATION" data_type="Ref::EpsOp">
+        <channel id="0" name="PR_OPERATION" data_type="Ref::EpsOp">
             <comment>
             The operation
             </comment>
         </channel>
-        <channel id="1" name="MR_FACTOR1S" data_type="U32">
+        <channel id="1" name="PR_FACTOR1S" data_type="U32">
             <comment>
-            The number of MR_SET_FACTOR1 commands
+            The number of PR_SET_FACTOR1 commands
             </comment>
         </channel>
-        <channel id="2" name="MR_FACTOR1" data_type="F32">
+        <channel id="2" name="PR_FACTOR1" data_type="F32">
             <comment>
             Factor 1 value
             </comment>
         </channel>
-        <channel id="3" name="MR_FACTOR2" data_type="F32">
+        <channel id="3" name="PR_FACTOR2" data_type="F32">
             <comment>
             Factor 2 value
             </comment>
         </channel>
     </telemetry>
     <events>
-        <event id="0" name="MR_SET_FACTOR1" severity="ACTIVITY_HI" format_string = "Factor 1: %f"  throttle = "3"   >
+        <event id="0" name="PR_SET_FACTOR1" severity="ACTIVITY_HI" format_string = "Factor 1: %f"  throttle = "3"   >
             <comment>
             Operation factor 1
             </comment>
@@ -70,7 +70,7 @@
                 </arg>          
             </args>
         </event>
-        <event id="1" name="MR_UPDATED_FACTOR2" severity="ACTIVITY_HI" format_string = "Factor 2 updated to: %f" >
+        <event id="1" name="PR_UPDATED_FACTOR2" severity="ACTIVITY_HI" format_string = "Factor 2 updated to: %f" >
             <comment>
             Updated factor 2
             </comment>
@@ -80,7 +80,7 @@
                 </arg>          
             </args>
         </event>
-        <event id="2" name="MR_OPERATION_PERFORMED" severity="ACTIVITY_HI" format_string = "Operation performed: %s" >
+        <event id="2" name="PR_OPERATION_PERFORMED" severity="ACTIVITY_HI" format_string = "Operation performed: %s" >
             <comment>
             Math operation performed
             </comment>
@@ -90,7 +90,7 @@
                 </arg>          
             </args>
         </event>
-        <event id="3" name="MR_THROTTLE_CLEARED" severity="ACTIVITY_HI" format_string = "Event throttle cleared" >
+        <event id="3" name="PR_THROTTLE_CLEARED" severity="ACTIVITY_HI" format_string = "Event throttle cleared" >
             <comment>
             Event throttle cleared
             </comment>
