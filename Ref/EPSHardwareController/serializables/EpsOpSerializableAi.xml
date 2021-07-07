@@ -1,0 +1,15 @@
+<serializable namespace = "Ref" name="EpsOp">
+  <comment>
+    This value holds the value of the power in a certain hardware
+  </comment>
+  <members>
+    <member name ="val1" type="F32"/>
+    <member name="val2" type="F32"/>
+    <member name = "op" type="ENUM">
+      <enum name="Power">
+	<item name = "POWERVALUE"/>
+      </enum>
+    </member>
+    <member name="result" type="F32"/>
+  </members>
+</serializable>
